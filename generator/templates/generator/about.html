@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<h1>ABOUT</h1>
+<p>The password generator helps in generating a completely random password which can be copied and used.</p>
+
+<div>
+    <h2>
+      Disclaimer:
+    </h2>
+    <p>
+      We, the creators of the site do not store nor save the passwords generated on this site. The password generated belong to you and you alone.
+    </p>
+</div>
+
+<a role="button" href="{% url 'generator:homepage' %}" class="btn btn-primary">Home</a>
+
+{% endblock %}
