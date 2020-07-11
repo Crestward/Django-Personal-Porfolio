@@ -24,11 +24,11 @@
 
     {% if project.url %}
     <a href="{{ project.url }}">
-      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+      <img src="{{ project.image.url }}"  class="img-fluid mb-2">
     </a>
     {% else %}
 
-    <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    <img src="{{ project.image.url }}" width="250" height="200" class="img-fluid mb-2">
 
     {% endif %}
 
@@ -45,5 +45,10 @@
 <hr>
 <p>Try out the password generator here😊 >>></p>
 <a role="button" href="{% url 'generator:homepage' %}" class="btn btn-primary">Generator</a>
+<br>
+<br>
+<br>
+<p>Take a stab at organizing your workload >>>></p>
+<a role="button" href="{% url 'todo:hometodo' %}" class="btn btn-primary">Todo</a>
 </div>
     {% endblock %}
